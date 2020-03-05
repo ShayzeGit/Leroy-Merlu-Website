@@ -1622,7 +1622,9 @@ readers do not read off random characters that represent icons */
   content: "\f561"; }
 
 .fa-code:before {
-  content: "\f121"; }
+  content: "\f121";
+  margin-right: 8px;
+}
 
 .fa-code-branch:before {
   content: "\f126"; }
@@ -8267,7 +8269,8 @@ readers do not read off random characters that represent icons */
   content: "\10f561"; }
 
 .fad.fa-code:after {
-  content: "\10f121"; }
+  content: "\10f121";
+}
 
 .fad.fa-code-branch:after {
   content: "\10f126"; }
