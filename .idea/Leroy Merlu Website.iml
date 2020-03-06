@@ -8,5 +8,6 @@
     <orderEntry type="library" name="default" level="application" />
     <orderEntry type="library" name="v4-shims" level="application" />
     <orderEntry type="library" name="mono-blue" level="application" />
+    <orderEntry type="library" name="pdfobject" level="application" />
   </component>
 </module>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{default, highlight, mono-blue, v4-shims}" />
+    <file url="PROJECT" libraries="{default, highlight, mono-blue, pdfobject, v4-shims}" />
   </component>
 </project>

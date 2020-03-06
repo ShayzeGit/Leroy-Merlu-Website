@@ -6238,7 +6238,9 @@ readers do not read off random characters that represent icons */
   content: "\f946"; }
 
 .fa-trash:before {
-  content: "\f1f8"; }
+  content: "\f1f8";
+  margin-right: 8px;
+}
 
 .fa-trash-alt:before {
   content: "\f2ed"; }
@@ -11959,7 +11961,8 @@ readers do not read off random characters that represent icons */
   content: "\10f946"; }
 
 .fad.fa-trash:after {
-  content: "\10f1f8"; }
+  content: "\10f1f8";
+}
 
 .fad.fa-trash-alt:after {
   content: "\10f2ed"; }
