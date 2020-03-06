@@ -8675,7 +8675,8 @@ readers do not read off random characters that represent icons */
   content: "\10f4ba"; }
 
 .fad.fa-download:after {
-  content: "\10f019"; }
+  content: "\10f019";
+}
 
 .fad.fa-drafting-compass:after {
   content: "\10f568"; }

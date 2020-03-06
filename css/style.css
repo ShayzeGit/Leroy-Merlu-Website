@@ -378,6 +378,18 @@ li img {
 
 }
 
+pre{
+    margin-bottom: 0;
+    margin-top: 5em;
+}
+
+div a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: indianred;
+}
+
 
 
 
