@@ -19,6 +19,8 @@
 
 <header>
 
+    <button id="switch-color"> COLOR </button>
+
     <nav id="main-menu">
         <ul class="nav-bar">
             <a href="index.html"><img src="imgs/Leroy_Merlu.png" class="iconeLM"></a>
@@ -31,12 +33,12 @@
                         <a href="doc-raspberry.html"><img src="imgs/raspb.png" alt="Icon"/></i>Raspberry</a></li>
                     <li><a href="sql.html"><img src="imgs/mysql.png" alt="Icon2"/>SQL</a></li>
                     <li><a href="install.html"><img src="imgs/java.png" alt="Icon3"/>Installation</a></li>
-                    <li><a href="#"><img src="imgs/diagram.png" alt="Icon3"/>Diagramme</a></li>
+                    <li><a href="diagram.html"><img src="imgs/diagram.png" alt="Icon3"/>Diagramme</a></li>
 
                 </ul>
             </li>
             <li><a href="#"><i class="far fa-sort-amount-up"></i>Amélioration</a></li>
-            <li><a href="#"><i class="far fa-code"></i>Larp</a></li>
+            <li><a href="larp.html"><i class="far fa-code"></i>Larp</a></li>
             <li><a href="about.html"><i class="far fa-bell-on"></i>À propos</a></li>
         </ul>
     </nav>
@@ -47,22 +49,41 @@
     <h2>Exercices Larp</h2>
 </div>
 
-<p class="first-para"> Ci-dessous sont affichés différents exercices <span>Larp</span> que nous avons dû effectuer lors de notre atelier 1. </p>
+<p class="first-para"> Ci-dessous sont affichés différents exercices Larp que nous avons dû effectuer lors de notre
+    atelier 1. </p>
 
-<section>
+<section class="outerSec">
 
-    <p>
+    <div class="larpExo">
+        <h3 id="titre-spe"> Distance de Hamming </h3>
+        <figure><img id="larpimage1" class="image-logi" alt="Distance de Hamming !" src="larp/larpLogigramme2.png"></figure>
 
-        Distance de Hamming
+        <h3 id="titre-spe2">
+            Palindrome
+        </h3>
+        <figure><img id="larpimage3" class="image-logi" alt="Palindrome !" src="larp/larpPalindrome.png"></figure>
 
-    </p>
+    </div>
+
+    <div class="larpExo">
+        <h3> Tri par Selection </h3>
+        <figure><img id="larpimage2" class="image-pseudo" alt="Image not found !" src="larp/larpTxt.png"></figure>
+
+        <h3> Calcul TVA </h3>
+        <figure><img id="larpimage4" class="image-pseudo" alt="Image not found !" src="larp/CalculTva.png"></figure>
+
+        <h3> Calcul IMC </h3>
+        <figure><img id="larpimage5" class="image-pseudo" alt="Image not found !" src="larp/Calcul_IMC.png"></figure>
+
+    </div>
 
 </section>
 
-
-
-
-
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
 
 
 <footer>
@@ -78,14 +99,18 @@
             </p>
 
             <p>&copy; Leroy Merlu 2020</p>
+
         </div>
 
     </footer>
 
 </footer>
 
+<script type="text/javascript" src="displayImage.js"></script>
+<script type="text/javascript" src="displayImage2.js"></script>
+<script type="text/javascript" src="switch-color.js"></script>
+
 
 </body>
-
 
 </html>

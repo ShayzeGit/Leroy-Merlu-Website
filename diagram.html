@@ -2,9 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Diagramme</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/regular.css">
+    <link rel="stylesheet" href="css/regular.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="imgs/Leroy_Merlu.ico"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.js"></script>
+
 </head>
+
 <body>
-$END$
+
+<header>
+
+    <button id="switch-color"> COLOR </button>
+
+    <nav id="main-menu">
+        <ul class="nav-bar">
+            <a href="index.html"><img src="imgs/Leroy_Merlu.png" class="iconeLM"></a>
+            <li><a href="index.html"><i class="far fa-house"></i>Accueil</a></li>
+            <li><a href="#"><i class="far fa-user-chart"></i>Présentation/Objectifs</a></li>
+            <li><a href="#"><i class="far fa-head-side-brain"></i>Expériences</a></li>
+            <li><a href="#"><i class="far fa-file-pdf"></i>Documentation</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="doc-raspberry.html"><img src="imgs/raspb.png" alt="Icon"/></i>Raspberry</a></li>
+                    <li><a href="sql.html"><img src="imgs/mysql.png" alt="Icon2"/>SQL</a></li>
+                    <li><a href="install.html"><img src="imgs/java.png" alt="Icon3"/>Installation</a></li>
+                    <li><a href="#"><img src="imgs/diagram.png" alt="Icon3"/>Diagramme</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#"><i class="far fa-sort-amount-up"></i>Amélioration</a></li>
+            <li><a href="larp.html"><i class="far fa-code"></i>Larp</a></li>
+            <li><a href="about.html"><i class="far fa-bell-on"></i>À propos</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<div>
+    <h2> Diagramme de l'application </h2>
+    <a href="doc/Package-guijava.png" download="diagramme.png"></i>Download Diagramme</a>
+</div>
+
+
+<figure><img id="diagramme" src="doc/Package-guijava.png" alt="image not found !"></figure>
+
+
+<footer>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+
+                <a class="link-1" href="#" onclick="window.scrollTo(0, 0);">Remonter la page</a>
+
+            </p>
+
+            <p>&copy; Leroy Merlu 2020</p>
+        </div>
+
+    </footer>
+
+</footer>
+
+<script type="text/javascript" src="switch-color.js"></script>
+<script type="text/javascript" src="zoom.js"></script>
+
+<script>
+    /* Execute the magnify function: */
+    magnify("diagramme", 3);
+    /* Specify the id of the image, and the strength of the magnifier glass: */
+</script>
+
 </body>
 </html>
