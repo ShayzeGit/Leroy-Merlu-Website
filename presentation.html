@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Présentation/Objectifs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/regular.css">
+    <link rel="stylesheet" href="css/regular.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="imgs/Leroy_Merlu.ico"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+<header>
+
+    <button id="switch-color">✎</button>
+
+    <nav id="main-menu">
+        <ul class="nav-bar">
+            <a href="index.html"><img src="imgs/Leroy_Merlu.png" class="iconeLM"></a>
+            <li><a href="index.html"><i class="far fa-house"></i>Accueil</a></li>
+            <li><a href="presentation.html"><i class="far fa-user-chart"></i>Présentation/Objectifs</a></li>
+            <li><a href="#"><i class="far fa-head-side-brain"></i>Expériences</a></li>
+            <li><a href="#"><i class="far fa-file-pdf"></i>Documentation</a>
+                <ul class="dropdown">
+                    <li><a href="doc-raspberry.html"><img src="imgs/raspb.png" alt="Icon"/></i>Raspberry</a></li>
+                    <li><a href="sql.html"><img src="imgs/mysql.png" alt="Icon2"/>SQL</a></li>
+                    <li><a href="install.html"><img src="imgs/java.png" alt="Icon3"/>Installation</a></li>
+                    <li><a href="diagram.html"><img src="imgs/diagram.png" alt="Icon3"/>Diagramme</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="far fa-sort-amount-up"></i>Amélioration</a></li>
+            <li><a href="larp.html"><i class="far fa-trash"></i>Larp</a></li>
+            <li><a href="about.html"><i class="far fa-bell-on"></i>À propos</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<div id="content">
+    <div class="sidenav">
+    <a id="atelier1" onclick="display1();">Atelier 1</a>
+    <a id="atelier2" onclick="display2();">Atelier 2</a>
+    <a id="atelier3" onclick="display3();">Atelier 3</a>
+    <a id="atelier4" onclick="display4();">Atelier 4</a>
+    <a id="atelier5" onclick="display5();">Atelier 5</a>
+
+    </div>
+
+    <div class="main">
+        <section id="section">
+            <h2 id="h2">Présentation des ateliers</h2>
+            <div id="text">
+                <p id="p">
+            </div>
+        </section>
+
+        <!--
+        <section id="section">
+            <h2 id="h2">Ateliers 1</h2>
+            <p></p>
+            <p id="p">Pour le premier atelier nous avons fais de l'algorithmie sur Larp qui est un logiciel compatible qu'avec windows xp nous avons donc
+                utilisé une machine virtuelle pour nous permettre de faire les exercices qui consistais en de l'algorithmie et des logigramme.</p>
+        </section>
+
+        <section>
+            <h2>Ateliers 2</h2>
+            <p></p>
+            <p>Pour le premier atelier nous avons fais de l'algorithmie sur Larp qui est un logiciel compatible qu'avec windows xp nous avons donc
+                utilisé une machine virtuelle pour nous permettre de faire les exercices qui consistais en de l'algorithmie et des logigramme.</p>
+        </section>
+
+        <section>
+            <h2>Ateliers 3</h2>
+            <p></p>
+            <p>Pour le premier atelier nous avons fais de l'algorithmie sur Larp qui est un logiciel compatible qu'avec windows xp nous avons donc
+                utilisé une machine virtuelle pour nous permettre de faire les exercices qui consistais en de l'algorithmie et des logigramme.</p>
+        </section>
+
+        <section>
+            <h2>Ateliers 4</h2>
+            <p></p>
+            <p>Pour le premier atelier nous avons fais de l'algorithmie sur Larp qui est un logiciel compatible qu'avec windows xp nous avons donc
+                utilisé une machine virtuelle pour nous permettre de faire les exercices qui consistais en de l'algorithmie et des logigramme.</p>
+        </section>
+
+        <section>
+            <h2>Ateliers 5</h2>
+            <p></p>
+            <p>Pour le premier atelier nous avons fais de l'algorithmie sur Larp qui est un logiciel compatible qu'avec windows xp nous avons donc
+                utilisé une machine virtuelle pour nous permettre de faire les exercices qui consistais en de l'algorithmie et des logigramme.</p>
+        </section>
+        -->
+    </div>
+
+    <script>
+
+        let section = document.getElementById("section");
+        let h2 = document.getElementById("h2");
+        let text = document.getElementById("text");
+        let p = document.getElementById("p");
+
+        function removeText(){
+            while (text.hasChildNodes()){
+                text.removeChild(text.firstChild);
+            }
+        }
+
+
+        function display1(){
+            removeText();
+            h2.textContent= "Atelier 1";
+
+            let p1 = document.createElement("p");
+            p1.textContent = "Pour le premier atelier nous avons fait de l'algorithmie sur Larp qui est un logiciel compatible uniquement avec windows xp.";
+            text.appendChild(p1);
+            //ajout d'un paragraphe
+            let p2 = document.createElement("p");
+            p2.textContent ="Nous avons donc utilisé une machine virtuelle (VirtualBox) afin de nous permettre de faire les exercices qui consistais en de l'algorithmie et des logigramme.";
+            text.appendChild(p2);
+
+        }
+
+        function display2(){
+            removeText();
+            h2.textContent= "Atelier 2";
+            let p1 = document.createElement("p");
+            p1.textContent = "Pour le premier atelier nous avons fait de l'algorithmie sur Larp qui est un logiciel compatible uniquement avec windows xp.";
+            text.appendChild(p1);
+        }
+
+        function display3(){
+            removeText();
+            h2.textContent= "Atelier 3";
+            let p1 = document.createElement("p");
+            p1.textContent = "Pour le premier atelier nous avons fait de l'algorithmie sur Larp qui est un logiciel compatible uniquement avec windows xp.";
+            text.appendChild(p1);
+        }
+
+        function display4(){
+            removeText();
+            h2.textContent= "Atelier 4";
+            let p1 = document.createElement("p");
+            p1.textContent = "Pour le premier atelier nous avons fait de l'algorithmie sur Larp qui est un logiciel compatible uniquement avec windows xp.";
+            text.appendChild(p1);
+        }
+
+        function display5(){
+            removeText();
+            h2.textContent= "Atelier 5";
+            let p1 = document.createElement("p");
+            p1.textContent = "Pour le premier atelier nous avons fait de l'algorithmie sur Larp qui est un logiciel compatible uniquement avec windows xp.";
+            text.appendChild(p1);
+        }
+    </script>
+
+</div>
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+
+                <a class="link-1" href="#" onclick="window.scrollTo(0, 0);">Remonter la page</a>
+
+            </p>
+
+            <p>&copy; Leroy Merlu 2020</p>
+        </div>
+
+    </footer>
+
+
+
+<script type="text/javascript" src="js/switch-color.js"></script>
+
+
+
+</body>
+</html>

@@ -5,19 +5,40 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-* {box-sizing: border-box;}
+
+* {
+    box-sizing: border-box;
+}
 
 
 @keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
 }
 
 body h1 {
@@ -33,7 +54,7 @@ body h1 {
     font-size: 5rem;
 }
 
-.text-app h2{
+.text-app h2 {
     font-size: 2.5rem;
 }
 
@@ -43,13 +64,14 @@ body h1 {
     background-color: #330d69;
     padding-bottom: 30px;
 }
-div #zone-caroussel{
+
+div #zone-caroussel {
     width: 80%;
     max-width: 1000px;
     overflow: hidden;
 }
 
-div #zone-caroussel figure{
+div #zone-caroussel figure {
     position: relative;
     width: 500%;
     margin: 0;
@@ -57,13 +79,15 @@ div #zone-caroussel figure{
     font-size: 0;
     text-align: left;
     animation: 30s slidy infinite;
+    z-index: 8;
 }
+
 div #zone-caroussel figure img {
     width: 20%;
     height: auto;
     float: left;
+    z-index: 8;
 }
-
 
 
 body {
@@ -107,39 +131,37 @@ header {
 }
 
 
-.app-simple-gratuit{
+.app-simple-gratuit {
     display: block;
 }
 
-.app-simple-gratuit .container{
+.app-simple-gratuit .container {
     padding: 8rem 0 5rem;
 }
 
-.app-simple-gratuit .container .app{
+.app-simple-gratuit .container .app {
     width: 30%;
     margin-left: 20em;
     padding: 0;
 }
 
-.app-simple-gratuit .app{
+.app-simple-gratuit .app {
     text-align: center;
     padding: 0 5%;
 }
 
-#application section>.container{
+#application section > .container {
     display: flex;
     align-items: center;
 }
 
-#application .app-simple-gratuit .container .text-app{
+#application .app-simple-gratuit .container .text-app {
     width: 50%;
 }
 
-#application .app-simple-gratuit .text-app{
+#application .app-simple-gratuit .text-app {
     text-align: center;
 }
-
-
 
 
 .iconeLM {
@@ -148,12 +170,6 @@ header {
     width: 100px;
     display: inline-block;
     margin: 4px;
-}
-
-
-footer {
-    margin: 0px;
-    width: 100%;
 }
 
 
@@ -252,7 +268,7 @@ footer {
     }
 }
 
-#container-pdf{
+#container-pdf {
     display: flex;
     justify-content: center;
     margin-top: 5em;
@@ -264,7 +280,7 @@ footer {
     width: 80%;
 }
 
-h2{
+h2 {
     font-family: 'Rubik', sans-serif;
     text-align: center;
     color: #330d69;
@@ -351,12 +367,14 @@ ul li ul {
     display: none;
 }
 
-.dropdown{
+.dropdown {
     width: 200px;
     padding: 0;
     margin: -20px;
+    z-index: 7;
 }
-.dropdown li{
+
+.dropdown li {
     padding: 0;
     margin: 0;
 }
@@ -365,7 +383,7 @@ ul li:hover > ul,
 ul li ul:hover {
     visibility: visible;
     opacity: 1;
-    margin-top : 20px;
+    margin-top: 20px;
     display: block;
 }
 
@@ -380,7 +398,7 @@ li img {
 
 }
 
-pre{
+pre {
     margin-bottom: 0;
     margin-top: 5em;
     margin-left: 2em;
@@ -393,11 +411,11 @@ div a {
     color: indianred;
 }
 
-.button{
+.button {
     background-color: darkgrey;
 }
 
-.first-para{
+.first-para {
     text-align: center;
     margin-top: 4em;
     font-weight: 500;
@@ -405,13 +423,11 @@ div a {
 }
 
 
-
-h3{
+h3 {
     color: white;
 }
 
-.outerSec
-{
+.outerSec {
     padding: 5px;
     display: flex;
     justify-content: space-around;
@@ -419,14 +435,14 @@ h3{
     background: linear-gradient(0.5turn, darkslateblue, darkslateblue);
 }
 
-.larpExo{
+.larpExo {
     width: 45%;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
-.larpExo h3{
+.larpExo h3 {
     align-self: center;
     font-size: x-large;
     margin-top: 2em;
@@ -437,11 +453,11 @@ h3{
     align-self: center;
 }
 
-#titre-spe{
+#titre-spe {
     margin-top: 6em;
 }
 
-#titre-spe2{
+#titre-spe2 {
     margin-top: 6em;
 }
 
@@ -453,12 +469,13 @@ h3{
     width: 230px;
     height: 548px;
 }
-#larpimage2{
+
+#larpimage2 {
     border-radius: 5px;
     margin-bottom: 2em;
 }
 
-#larpimage3{
+#larpimage3 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -466,19 +483,23 @@ h3{
     height: 548px;
 }
 
-#larpimage4{
+#larpimage4 {
     border-radius: 5px;
     margin-bottom: 2em;
 }
 
-#larpimage5{
+#larpimage5 {
     border-radius: 5px;
 }
 
-figure #diagramme{
+figure #diagramme {
     width: 1800px;
     height: 1000px;
-    cursor: zoom-in;
+    cursor: none;
+}
+
+figure {
+    margin-top: 8em;
 }
 
 
@@ -487,16 +508,18 @@ figure #diagramme{
 }
 
 .img-magnifier-glass {
-    position: relative;
+    position: absolute;
     border: 3px solid #000;
     border-radius: 50%;
     cursor: none;
     /*Set the size of the magnifier glass:*/
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+    opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
@@ -509,8 +532,8 @@ figure #diagramme{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -540,8 +563,12 @@ figure #diagramme{
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
 /* The Close Button */
@@ -563,19 +590,19 @@ figure #diagramme{
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
 }
 
-#switch-color{
+#switch-color {
     float: right;
     margin-top: 4em;
     margin-right: 1em;
     border: none;
     outline: none;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 0.9em;
     background-color: darkslateblue;
     font-family: Roboto, serif;
@@ -584,7 +611,71 @@ figure #diagramme{
     cursor: pointer;
 }
 
-.image-pseudo{
+.image-pseudo {
     height: 400px;
     width: 450px;
 }
+
+#content {
+    display: flex;
+    height: 1000px;
+
+}
+
+.sidenav {
+    height: 100%;
+    left: 0;
+    color: darkslateblue;
+    width: 400px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 4em 1em 1em 1em;
+    color: darkslateblue;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.main {
+    font-size: 28px; /* Increased text to enable scrolling */
+    height: 100%;
+    overflow: scroll;
+    background: linear-gradient(white, white);
+    /*border-radius: 10px;*/
+}
+
+.main strong {
+    color: darkslateblue;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.main h2 {
+    color: darkslateblue;
+}
+
+.main p {
+    color: black;
+    margin-left: 1em;
+}
+
+
+
+
+
