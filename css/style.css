@@ -619,14 +619,13 @@ figure {
 #content {
     display: flex;
     height: 1000px;
-
 }
 
 .sidenav {
     height: 100%;
     left: 0;
     color: darkslateblue;
-    width: 400px;
+    width: 350px;
 }
 
 .sidenav a {
@@ -634,7 +633,7 @@ figure {
     text-decoration: none;
     font-size: 25px;
     font-weight: 300;
-    margin: 4em 1em 1em 1em;
+    margin: 3.5em 0 1em 1em;
     color: darkslateblue;
     display: block;
 }
@@ -644,16 +643,26 @@ figure {
     color: white;
 }
 
+#sectionAtelier{
+    width: 100%;
+}
+
 .main {
-    font-size: 28px; /* Increased text to enable scrolling */
     height: 100%;
     overflow: scroll;
     background: linear-gradient(white, white);
+    display: flex;
+    flex:2;
     /*border-radius: 10px;*/
 }
 
 .main strong {
     color: darkslateblue;
+}
+
+#about-us-text{
+    text-align: center;
+    font-size: 1.12em;
 }
 
 @media screen and (max-height: 450px) {
