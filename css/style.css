@@ -47,7 +47,7 @@ body h1 {
     padding-top: 40px;
     padding-bottom: 20px;
     margin: 0px;
-    background-color: #330d69;
+    background-color: darkslateblue;
     text-transform: uppercase;
     color: #30c9cd;
     text-decoration: none;
@@ -61,7 +61,7 @@ body h1 {
 #principal-text {
     text-align: center;
     color: #ffffff;
-    background-color: #330d69;
+    background-color: darkslateblue;
     padding-bottom: 30px;
 }
 
@@ -89,15 +89,20 @@ div #zone-caroussel figure img {
     z-index: 8;
 }
 
-
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    margin: 0;
 
     background-size: 100%;
     /*background: url("../imgs/image_processing20191003-9637-20hktj.gif") no-repeat fixed center center;*/
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .8);
     height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    width: 100%;
 }
 
 header {
@@ -283,7 +288,7 @@ header {
 h2 {
     font-family: 'Rubik', sans-serif;
     text-align: center;
-    color: #330d69;
+    color: darkslateblue;
     font-size: 3em;
 }
 
@@ -417,7 +422,7 @@ div a {
 
 .first-para {
     text-align: center;
-    margin-top: 4em;
+    margin-top: 2em;
     font-weight: 500;
     color: indianred;
 }
@@ -431,7 +436,7 @@ h3 {
     padding: 5px;
     display: flex;
     justify-content: space-around;
-    margin-top: 7em;
+    margin-top: 4em;
     background: linear-gradient(0.5turn, darkslateblue, darkslateblue);
 }
 
@@ -446,7 +451,6 @@ h3 {
     align-self: center;
     font-size: x-large;
     margin-top: 2em;
-    margin-bottom: 1em;
 }
 
 .larpExo figure {
@@ -493,18 +497,21 @@ h3 {
 }
 
 figure #diagramme {
-    width: 1800px;
-    height: 1000px;
+    width: 1450px;
+    height: 1030px;
     cursor: none;
 }
 
 figure {
-    margin-top: 8em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 
 .img-magnifier-container {
     position: relative;
+    margin-top: 6em;
 }
 
 .img-magnifier-glass {
@@ -513,8 +520,8 @@ figure {
     border-radius: 50%;
     cursor: none;
     /*Set the size of the magnifier glass:*/
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
 #myImg:hover {
@@ -625,7 +632,7 @@ figure {
     height: 100%;
     left: 0;
     color: darkslateblue;
-    width: 350px;
+    width: 160px;
 }
 
 .sidenav a {
@@ -663,6 +670,8 @@ figure {
 #about-us-text{
     text-align: center;
     font-size: 1.12em;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 @media screen and (max-height: 450px) {
@@ -683,6 +692,35 @@ figure {
     color: black;
     margin-left: 1em;
 }
+
+.eddy-title{
+    color: indianred;
+    text-align: center;
+}
+
+.adrian-title{
+    color: indianred;
+    text-align: center;
+}
+
+.eddy-text{
+    text-align: center;
+}
+
+.adrian-text{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin: 2em;
+}
+
+.exp{
+    margin-bottom: 4em;
+}
+
+
 
 
 
