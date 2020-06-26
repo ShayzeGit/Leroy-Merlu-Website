@@ -177,6 +177,11 @@ header {
     margin: 4px;
 }
 
+#space{
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
 
 .footer-distributed {
     background-color: #292c2f;
@@ -192,6 +197,7 @@ header {
 .footer-distributed .footer-left p {
     color: #8f9296;
     font-size: 14px;
+
     margin: 0;
 }
 
